@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50 Years of Togetherness — Golden Jubilee Celebration</title>
+<meta name="description" content="Celebrating 50 wonderful years of love, family, and togetherness. A golden anniversary tribute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C87A;
+    --gold-pale: #F5E6C0;
+    --gold-shine: #FFD97D;
+    --cream: #FAF6EE;
+    --cream-dark: #F0E8D5;
+    --maroon: #7B2D3A;
+    --maroon-light: #9E3A49;
+    --maroon-pale: #F5E8EA;
+    --white: #FFFFFF;
+    --text-dark: #2C1810;
+    --text-mid: #5A3E35;
+    --text-light: #8B6E5A;
+    --shadow-gold: rgba(201, 168, 76, 0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250,246,238,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gold-pale);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .nav-brand {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--text-mid);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-music {
+    background: none; border: 1px solid var(--gold);
+    color: var(--gold); padding: 0.4rem 1rem;
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    letter-spacing: 0.1em; cursor: pointer;
+    border-radius: 20px; transition: all 0.3s;
+  }
+  .nav-music:hover { background: var(--gold); color: var(--white); }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a0a08 0%, #2C1810 40%, #3d1f14 70%, #1a0a08 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative; overflow: hidden; padding-top: 64px;
+  }
+  .hero-particles { position: absolute; inset: 0; pointer-events: none; }
+  .particle {
+    position: absolute; width: 4px; height: 4px;
+    background: var(--gold-shine); border-radius: 50%;
+    animation: float-up linear infinite;
+    opacity: 0;
+  }
+  @keyframes float-up {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-20px) rotate(360deg); opacity: 0; }
+  }
+  .hero-ornament {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem; letter-spacing: 0.4em;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1.2s ease both;
+  }
+  .hero-badge {
+    width: 120px; height: 120px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1s ease 0.2s both;
+    position: relative;
+  }
+  .hero-badge::before {
+    content: '';
+    position: absolute; inset: -8px;
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 50%;
+  }
+  .hero-badge-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; font-weight: 300; color: var(--gold-shine);
+    line-height: 1;
+  }
+  .hero-badge-text {
+    font-family: 'Cinzel', serif;
+    font-size: 0.5rem; letter-spacing: 0.2em;
+    color: var(--gold-light); text-transform: uppercase;
+  }
+
+  /* Couple photo frame */
+  .hero-couple-frame {
+    width: 220px; height: 280px;
+    border: 3px solid var(--gold);
+    position: relative; margin-bottom: 2.5rem;
+    animation: fadeInDown 1s ease 0.3s both;
+    box-shadow: 0 0 40px rgba(201,168,76,0.2), inset 0 0 40px rgba(0,0,0,0.3);
+  }
+  .hero-couple-frame::before, .hero-couple-frame::after {
+    content: '';
+    position: absolute;
+  }
+  .hero-couple-frame::before {
+    inset: 6px; border: 1px solid rgba(201,168,76,0.4);
+  }
+  .hero-couple-frame::after {
+    top: -12px; left: -12px; right: -12px; bottom: -12px;
+    border: 1px solid rgba(201,168,76,0.2);
+  }
+  .hero-photo-placeholder {
+    width: 100%; height: 100%;
+    background: linear-gradient(160deg, #3d2020 0%, #5a2d2d 40%, #3d2020 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.5rem;
+  }
+  .photo-icon { font-size: 3rem; opacity: 0.5; }
+  .photo-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.75rem; color: var(--gold); opacity: 0.7;
+    letter-spacing: 0.1em; text-align: center; padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 300;
+    color: var(--cream);
+    text-align: center;
+    line-height: 1.15;
+    max-width: 700px;
+    padding: 0 2rem;
+    animation: fadeInUp 1.2s ease 0.5s both;
+  }
+  .hero-title em { color: var(--gold-shine); font-style: normal; }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem; font-style: italic;
+    color: rgba(250,246,238,0.7);
+    margin: 1rem 0 2.5rem;
+    animation: fadeInUp 1.2s ease 0.7s both;
+  }
+
+  .hero-date {
+    display: flex; align-items: center; gap: 1.5rem;
+    animation: fadeInUp 1.2s ease 0.9s both;
+  }
+  .hero-date-line { width: 60px; height: 1px; background: var(--gold); opacity: 0.5; }
+  .hero-date-text {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem; letter-spacing: 0.2em;
+    color: var(--gold-light);
+  }
+
+  .hero-scroll {
+    position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    animation: bounce 2s ease infinite;
+  }
+  .hero-scroll span {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.3em; color: var(--gold); opacity: 0.7;
+  }
+  .scroll-arrow { color: var(--gold); font-size: 1.2rem; opacity: 0.7; }
+
+  @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes bounce { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-10px); } }
+
+  /* ── SECTIONS SHARED ── */
+  section { padding: 6rem 2rem; }
+  .section-ornament {
+    text-align: center; margin-bottom: 0.75rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem; color: var(--gold); opacity: 0.6;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400; text-align: center;
+    color: var(--text-dark); margin-bottom: 0.5rem;
+  }
+  .section-subtitle {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1rem; font-style: italic;
+    color: var(--text-light); text-align: center;
+    margin-bottom: 4rem;
+  }
+  .gold-divider {
+    display: flex; align-items: center; justify-content: center;
+    gap: 1rem; margin: 1.5rem auto 0;
+  }
+  .gold-divider-line { width: 80px; height: 1px; background: var(--gold); opacity: 0.4; }
+  .gold-divider-diamond {
+    width: 8px; height: 8px;
+    background: var(--gold); transform: rotate(45deg);
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* ── COUNTDOWN ── */
+  #countdown {
+    background: linear-gradient(135deg, var(--maroon) 0%, #5a1e28 100%);
+    padding: 3rem 2rem; text-align: center;
+  }
+  .countdown-label {
+    font-family: 'Cinzel', serif; font-size: 0.75rem;
+    letter-spacing: 0.3em; color: var(--gold-light);
+    text-transform: uppercase; margin-bottom: 1.5rem;
+  }
+  .countdown-grid { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+  .countdown-item { text-align: center; min-width: 80px; }
+  .countdown-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem; font-weight: 300;
+    color: var(--gold-shine); line-height: 1;
+    display: block;
+  }
+  .countdown-unit {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.2em; color: var(--cream); opacity: 0.6;
+    text-transform: uppercase;
+  }
+  .countdown-sep {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; color: var(--gold); opacity: 0.4;
+    padding-top: 0.2rem;
+  }
+
+  /* ── TIMELINE ── */
+  #timeline { background: var(--cream); }
+  .timeline-track {
+    position: relative; max-width: 800px; margin: 0 auto;
+  }
+  .timeline-track::before {
+    content: ''; position: absolute;
+    left: 50%; top: 0; bottom: 0;
+    width: 1px; background: linear-gradient(to bottom, transparent, var(--gold) 10%, var(--gold) 90%, transparent);
+    transform: translateX(-50%);
+  }
+  .timeline-item {
+    display: flex; justify-content: flex-end;
+    padding-right: calc(50% + 2.5rem); margin-bottom: 3rem;
+    position: relative;
+  }
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0; padding-left: calc(50% + 2.5rem);
+  }
+  .timeline-dot {
+    position: absolute; left: 50%; top: 1.5rem;
+    width: 14px; height: 14px;
+    background: var(--gold); border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 4px var(--cream), 0 0 0 6px rgba(201,168,76,0.3);
+  }
+  .timeline-card {
+    background: var(--white);
+    border: 1px solid var(--gold-pale);
+    border-left: 3px solid var(--gold);
+    padding: 1.5rem;
+    max-width: 320px;
+    box-shadow: 0 4px 20px rgba(201,168,76,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .timeline-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(201,168,76,0.2);
+  }
+  .timeline-item:nth-child(even) .timeline-card { border-left: none; border-right: 3px solid var(--gold); }
+  .timeline-year {
+    font-family: 'Cinzel', serif; font-size: 0.7rem;
+    letter-spacing: 0.2em; color: var(--gold);
+    text-transform: uppercase; margin-bottom: 0.5rem;
+  }
+  .timeline-event {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 500;
+    color: var(--text-dark); margin-bottom: 0.5rem;
+  }
+  .timeline-desc {
+    font-size: 0.95rem; color: var(--text-light);
+    line-height: 1.6; font-style: italic;
+  }
+  .timeline-photo {
+    width: 100%; height: 120px;
+    background: linear-gradient(135deg, var(--cream-dark), var(--gold-pale));
+    margin-top: 1rem; display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; opacity: 0.5;
+  }
+
+  /* ── GALLERY ── */
+  #gallery { background: var(--text-dark); }
+  #gallery .section-title { color: var(--cream); }
+  #gallery .section-subtitle { color: rgba(250,246,238,0.6); }
+  #gallery .section-ornament { color: var(--gold-shine); }
+
+  .gallery-tabs {
+    display: flex; justify-content: center; gap: 0; margin-bottom: 2rem;
+    border: 1px solid rgba(201,168,76,0.3); max-width: 600px; margin-left: auto; margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .gallery-tab {
+    padding: 0.6rem 1.5rem;
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    cursor: pointer; transition: all 0.3s;
+    background: none; border: none; color: rgba(250,246,238,0.5);
+    border-right: 1px solid rgba(201,168,76,0.3);
+  }
+  .gallery-tab:last-child { border-right: none; }
+  .gallery-tab.active { background: var(--gold); color: var(--text-dark); }
+  .gallery-tab:hover:not(.active) { color: var(--gold-light); }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem; margin-bottom: 2rem;
+  }
+  .gallery-item {
+    position: relative; overflow: hidden; cursor: pointer;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #2c1810, #3d2020);
+    transition: transform 0.3s;
+  }
+  .gallery-item:hover { transform: scale(1.02); }
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+  .gallery-placeholder {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.5rem;
+  }
+  .gallery-placeholder-icon { font-size: 2.5rem; opacity: 0.3; color: var(--gold); }
+  .gallery-placeholder-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem; color: var(--gold); opacity: 0.5;
+  }
+  .gallery-overlay {
+    position: absolute; inset: 0;
+    background: rgba(201,168,76,0.15);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .gallery-expand {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: rgba(201,168,76,0.9);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; color: var(--text-dark);
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(0,0,0,0.95);
+    display: none; align-items: center; justify-content: center;
+    flex-direction: column; gap: 1rem;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-img {
+    max-width: 90vw; max-height: 80vh;
+    border: 2px solid var(--gold);
+    background: #2c1810;
+    display: flex; align-items: center; justify-content: center;
+    min-width: 400px; min-height: 300px;
+    font-size: 4rem;
+  }
+  .lightbox-close {
+    position: absolute; top: 1.5rem; right: 2rem;
+    font-size: 2rem; color: var(--gold);
+    cursor: pointer; background: none; border: none;
+  }
+  .lightbox-caption {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; color: var(--gold-light); font-size: 1.1rem;
+  }
+
+  /* ── VIDEOS ── */
+  #videos { background: var(--cream); }
+  .video-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .video-card {
+    background: var(--white);
+    border: 1px solid var(--gold-pale);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .video-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(201,168,76,0.2); }
+  .video-thumb {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, var(--text-dark), var(--maroon));
+    display: flex; align-items: center; justify-content: center;
+    position: relative; cursor: pointer;
+  }
+  .video-play-btn {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: rgba(201,168,76,0.9);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; color: var(--text-dark);
+    transition: transform 0.3s;
+  }
+  .video-thumb:hover .video-play-btn { transform: scale(1.1); }
+  .video-info { padding: 1.25rem; }
+  .video-tag {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.5rem;
+  }
+  .video-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; font-weight: 500; color: var(--text-dark);
+    margin-bottom: 0.25rem;
+  }
+  .video-desc { font-size: 0.9rem; color: var(--text-light); font-style: italic; }
+  .video-embed-input {
+    margin-top: 3rem; padding: 2rem;
+    background: var(--cream-dark);
+    border: 1px dashed var(--gold);
+    text-align: center;
+  }
+  .video-embed-input p {
+    font-family: 'Cinzel', serif; font-size: 0.7rem;
+    letter-spacing: 0.15em; color: var(--gold); margin-bottom: 1rem;
+  }
+  .video-embed-input input {
+    width: 100%; max-width: 500px;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gold-pale); background: var(--white);
+    font-family: 'EB Garamond', serif; font-size: 1rem;
+    color: var(--text-dark); outline: none;
+    transition: border-color 0.3s;
+  }
+  .video-embed-input input:focus { border-color: var(--gold); }
+
+  /* ── WISHES ── */
+  #wishes { background: linear-gradient(135deg, var(--maroon) 0%, #5a1e28 60%, var(--maroon) 100%); }
+  #wishes .section-title { color: var(--cream); }
+  #wishes .section-subtitle { color: rgba(250,246,238,0.65); }
+  #wishes .section-ornament { color: var(--gold-shine); }
+
+  .wish-form {
+    max-width: 600px; margin: 0 auto 3rem;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 2rem;
+  }
+  .wish-form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--gold-light);
+    margin-bottom: 1.5rem; text-align: center;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-group label {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.15em; color: var(--gold-light); text-transform: uppercase;
+  }
+  .form-group input, .form-group textarea, .form-group select {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 0.65rem 1rem;
+    font-family: 'EB Garamond', serif; font-size: 1rem;
+    color: var(--cream); outline: none;
+    transition: border-color 0.3s;
+    resize: vertical;
+  }
+  .form-group input:focus, .form-group textarea:focus { border-color: var(--gold); }
+  .form-group select option { background: var(--maroon); color: var(--cream); }
+  .btn-gold {
+    background: var(--gold); color: var(--text-dark);
+    border: none; padding: 0.8rem 2.5rem;
+    font-family: 'Cinzel', serif; font-size: 0.75rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    cursor: pointer; transition: all 0.3s; display: block; margin: 1.5rem auto 0;
+  }
+  .btn-gold:hover { background: var(--gold-shine); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,168,76,0.3); }
+
+  .wishes-wall {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .wish-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 1.75rem;
+    position: relative; overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+    animation: fadeInCard 0.6s ease both;
+  }
+  @keyframes fadeInCard { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .wish-card:hover { transform: translateY(-4px); border-color: rgba(201,168,76,0.5); }
+  .wish-card::before {
+    content: '\201C';
+    position: absolute; top: -0.5rem; left: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem; color: rgba(201,168,76,0.15); line-height: 1;
+  }
+  .wish-relation {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.75rem;
+  }
+  .wish-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-style: italic; color: var(--cream);
+    line-height: 1.7; margin-bottom: 1rem;
+  }
+  .wish-author {
+    font-family: 'Cinzel', serif; font-size: 0.7rem;
+    color: var(--gold-light); letter-spacing: 0.1em;
+  }
+  .wish-hearts { font-size: 0.9rem; margin-top: 0.5rem; }
+
+  /* ── FAMILY TREE ── */
+  #family { background: var(--cream-dark); }
+  .family-tree-svg { width: 100%; max-width: 900px; margin: 0 auto; display: block; overflow: visible; }
+  .tree-node-bg { fill: var(--white); stroke: var(--gold); stroke-width: 1.5; }
+  .tree-node-name { font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; fill: var(--text-dark); text-anchor: middle; dominant-baseline: middle; }
+  .tree-node-role { font-family: 'Cinzel', serif; font-size: 0.5rem; fill: var(--gold); text-anchor: middle; letter-spacing: 2px; text-transform: uppercase; }
+  .tree-connector { stroke: var(--gold); stroke-width: 1; fill: none; stroke-dasharray: 4 3; opacity: 0.6; }
+  .tree-heart { fill: var(--maroon); }
+  .tree-central { fill: var(--gold-pale); stroke: var(--gold); stroke-width: 2; }
+
+  /* ── EVENT ── */
+  #event { background: var(--text-dark); }
+  #event .section-title { color: var(--cream); }
+  #event .section-subtitle { color: rgba(250,246,238,0.6); }
+  #event .section-ornament { color: var(--gold-shine); }
+
+  .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+  .event-detail-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.2); padding: 2rem;
+  }
+  .event-item { margin-bottom: 1.75rem; display: flex; gap: 1rem; align-items: flex-start; }
+  .event-icon { font-size: 1.5rem; color: var(--gold); min-width: 2rem; }
+  .event-item-label {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.3rem;
+  }
+  .event-item-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; color: var(--cream); line-height: 1.5;
+  }
+  .map-placeholder {
+    background: linear-gradient(135deg, #1a2a1a, #2a3a2a);
+    height: 300px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    border: 1px solid rgba(201,168,76,0.2); gap: 1rem;
+  }
+  .map-placeholder span { font-size: 3rem; opacity: 0.4; }
+  .map-placeholder p {
+    font-family: 'Cinzel', serif; font-size: 0.7rem;
+    letter-spacing: 0.1em; color: var(--gold); opacity: 0.7;
+  }
+  .map-link {
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    letter-spacing: 0.15em; color: var(--gold);
+    border: 1px solid var(--gold); padding: 0.5rem 1.2rem;
+    text-decoration: none; transition: all 0.3s;
+  }
+  .map-link:hover { background: var(--gold); color: var(--text-dark); }
+  .rsvp-btn {
+    display: block; text-align: center;
+    background: var(--gold); color: var(--text-dark);
+    font-family: 'Cinzel', serif; font-size: 0.85rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 1rem 2rem; text-decoration: none;
+    transition: all 0.3s; margin-top: 1.5rem;
+    border: 2px solid var(--gold);
+  }
+  .rsvp-btn:hover { background: transparent; color: var(--gold); }
+
+  /* ── MEMORY BOOK ── */
+  #memorybook { background: var(--cream); }
+  .book-container {
+    max-width: 800px; margin: 0 auto;
+    position: relative;
+    perspective: 2000px;
+  }
+  .book {
+    display: flex; gap: 0;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.2), 10px 10px 40px rgba(0,0,0,0.1);
+    transform-style: preserve-3d;
+  }
+  .book-left, .book-right {
+    flex: 1; min-height: 500px; padding: 3rem;
+    position: relative; overflow: hidden;
+  }
+  .book-left {
+    background: linear-gradient(105deg, #f5e6c0 0%, #faf6ee 100%);
+    border-right: 2px solid var(--gold);
+    box-shadow: inset -5px 0 15px rgba(201,168,76,0.1);
+  }
+  .book-right {
+    background: linear-gradient(75deg, #faf6ee 0%, #f5e6c0 100%);
+    box-shadow: inset 5px 0 15px rgba(201,168,76,0.1);
+  }
+  .book-page-num {
+    position: absolute; bottom: 1.5rem;
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    color: var(--gold); letter-spacing: 0.1em;
+  }
+  .book-left .book-page-num { right: 1.5rem; }
+  .book-right .book-page-num { left: 1.5rem; }
+  .book-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-style: italic;
+    color: var(--text-dark); line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .book-quote-attr {
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    color: var(--gold); letter-spacing: 0.15em;
+  }
+  .book-image-box {
+    background: linear-gradient(135deg, var(--cream-dark), var(--gold-pale));
+    height: 180px; margin: 1.5rem 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3rem; opacity: 0.5;
+    border: 1px solid var(--gold-pale);
+  }
+  .book-nav {
+    display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;
+  }
+  .book-nav-btn {
+    background: none; border: 1px solid var(--gold);
+    color: var(--gold); padding: 0.5rem 1.5rem;
+    font-family: 'Cinzel', serif; font-size: 0.7rem;
+    letter-spacing: 0.15em; cursor: pointer; transition: all 0.3s;
+  }
+  .book-nav-btn:hover { background: var(--gold); color: var(--text-dark); }
+  .book-sticker {
+    position: absolute; font-size: 1.5rem;
+    transform: rotate(-15deg); opacity: 0.6;
+  }
+
+  /* ── ADMIN ── */
+  #admin { background: var(--maroon-pale); }
+  .admin-login {
+    max-width: 420px; margin: 0 auto;
+    background: var(--white);
+    border: 1px solid var(--gold-pale);
+    padding: 3rem;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  }
+  .admin-logo {
+    font-family: 'Cinzel', serif; font-size: 1rem;
+    letter-spacing: 0.2em; color: var(--gold);
+    text-align: center; margin-bottom: 0.5rem;
+  }
+  .admin-subtitle-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.9rem; font-style: italic;
+    color: var(--text-light); text-align: center; margin-bottom: 2rem;
+  }
+  .admin-form { display: flex; flex-direction: column; gap: 1rem; }
+  .admin-form label {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.15em; color: var(--text-mid); text-transform: uppercase;
+  }
+  .admin-form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gold-pale);
+    font-family: 'EB Garamond', serif; font-size: 1rem;
+    color: var(--text-dark); outline: none;
+    transition: border-color 0.3s; width: 100%;
+  }
+  .admin-form input:focus { border-color: var(--gold); }
+  .admin-panel {
+    max-width: 900px; margin: 0 auto;
+    display: none;
+  }
+  .admin-panel.active { display: block; }
+  .admin-upload-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+  .upload-zone {
+    border: 2px dashed var(--gold);
+    padding: 2.5rem; text-align: center;
+    background: rgba(201,168,76,0.03);
+    cursor: pointer; transition: all 0.3s;
+  }
+  .upload-zone:hover { background: rgba(201,168,76,0.08); }
+  .upload-icon { font-size: 2.5rem; margin-bottom: 0.75rem; opacity: 0.6; }
+  .upload-title {
+    font-family: 'Cinzel', serif; font-size: 0.75rem;
+    letter-spacing: 0.15em; color: var(--gold); margin-bottom: 0.5rem;
+  }
+  .upload-desc { font-size: 0.85rem; color: var(--text-light); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: linear-gradient(135deg, #1a0a08, #2c1810);
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+  }
+  .footer-ornament { font-size: 2.5rem; color: var(--gold); opacity: 0.6; margin-bottom: 1rem; }
+  .footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; font-weight: 300; color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .footer-subtitle {
+    font-family: 'EB Garamond', serif;
+    font-style: italic; color: rgba(250,246,238,0.5);
+    margin-bottom: 2rem;
+  }
+  .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+  .footer-links a {
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    letter-spacing: 0.15em; color: rgba(201,168,76,0.7);
+    text-decoration: none; text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.1em; color: rgba(250,246,238,0.25);
+    border-top: 1px solid rgba(201,168,76,0.1);
+    padding-top: 1.5rem; margin-top: 1rem;
+  }
+  .footer-hearts { color: var(--maroon-light); }
+
+  /* ── QR / SHARE ── */
+  .share-section {
+    background: var(--cream-dark); padding: 3rem 2rem;
+    text-align: center;
+  }
+  .share-label {
+    font-family: 'Cinzel', serif; font-size: 0.75rem;
+    letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .share-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+  .share-btn {
+    padding: 0.7rem 1.8rem;
+    border: 1px solid var(--gold); background: none;
+    font-family: 'Cinzel', serif; font-size: 0.65rem;
+    letter-spacing: 0.15em; color: var(--gold);
+    cursor: pointer; transition: all 0.3s; text-transform: uppercase;
+  }
+  .share-btn:hover { background: var(--gold); color: var(--text-dark); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { padding: 0 1rem; }
+    .nav-links { display: none; }
+    .event-grid { grid-template-columns: 1fr; }
+    .book { flex-direction: column; }
+    .book-left { border-right: none; border-bottom: 2px solid var(--gold); }
+    .form-row { grid-template-columns: 1fr; }
+    .admin-upload-grid { grid-template-columns: 1fr; }
+    .timeline-track::before { left: 1.5rem; }
+    .timeline-item { padding-right: 0; padding-left: 4rem; justify-content: flex-start; }
+    .timeline-item:nth-child(even) { padding-left: 4rem; }
+    .timeline-dot { left: 1.5rem; }
+    .timeline-item:nth-child(even) .timeline-card { border-right: none; border-left: 3px solid var(--gold); }
+    .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    .hero-couple-frame { width: 160px; height: 210px; }
+  }
+
+  /* ── FLOATING SPARKLES ── */
+  .sparkle-field { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .sparkle {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: var(--gold-shine);
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkle-float linear infinite;
+  }
+  @keyframes sparkle-float {
+    0% { opacity: 0; transform: translateY(0) scale(0); }
+    20% { opacity: 0.8; transform: translateY(-30px) scale(1); }
+    80% { opacity: 0.3; transform: translateY(-80px) scale(0.5); }
+    100% { opacity: 0; transform: translateY(-120px) scale(0); }
+  }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* Music player */
+  .music-player {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+    background: rgba(44, 24, 16, 0.9);
+    border: 1px solid var(--gold);
+    padding: 0.75rem 1.25rem;
+    display: flex; align-items: center; gap: 0.75rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+  }
+  .music-status {
+    font-family: 'Cinzel', serif; font-size: 0.6rem;
+    letter-spacing: 0.1em; color: var(--gold-light);
+  }
+  .music-equalizer { display: flex; align-items: flex-end; gap: 2px; height: 14px; }
+  .eq-bar {
+    width: 3px; background: var(--gold);
+    animation: eq-bounce 0.8s ease infinite;
+    border-radius: 1px;
+  }
+  .eq-bar:nth-child(1) { height: 4px; animation-delay: 0s; }
+  .eq-bar:nth-child(2) { height: 10px; animation-delay: 0.1s; }
+  .eq-bar:nth-child(3) { height: 6px; animation-delay: 0.2s; }
+  .eq-bar:nth-child(4) { height: 12px; animation-delay: 0.15s; }
+  .eq-bar:nth-child(5) { height: 5px; animation-delay: 0.05s; }
+  @keyframes eq-bounce {
+    0%,100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.3); }
+  }
+  .music-playing .eq-bar { animation-play-state: running; }
+  .music-paused .eq-bar { animation-play-state: paused; }
+</style>
+</head>
+<body>
+
+<!-- Floating sparkle field (outside hero) -->
+<div class="sparkle-field" id="sparkleField"></div>
+
+<!-- Music player widget -->
+<div class="music-player music-paused" id="musicPlayer">
+  <div class="music-equalizer">
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+    <div class="eq-bar"></div>
+  </div>
+  <span class="music-status" id="musicStatus">♪ Soft melody</span>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <div class="lightbox-img" id="lightboxImg">📸</div>
+  <div class="lightbox-caption" id="lightboxCaption">A precious memory</div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-brand">50 Years</span>
+  <ul class="nav-links">
+    <li><a href="#timeline">Journey</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#wishes">Wishes</a></li>
+    <li><a href="#family">Family</a></li>
+    <li><a href="#event">Celebration</a></li>
+    <li><a href="#admin">Admin</a></li>
+  </ul>
+  <button class="nav-music" onclick="toggleMusic()" id="musicBtn">♪ Music</button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-particles" id="heroParticles"></div>
+
+  <div class="hero-ornament">✦ A Golden Celebration ✦</div>
+
+  <div class="hero-badge">
+    <span class="hero-badge-num">50</span>
+    <span class="hero-badge-text">Years</span>
+  </div>
+
+  <div class="hero-couple-frame">
+    <div class="hero-photo-placeholder">
+      <span class="photo-icon">💑</span>
+      <span class="photo-label">Your beloved<br>couple photo here</span>
+    </div>
+  </div>
+
+  <h1 class="hero-title">
+    Celebrating <em>50 Wonderful Years</em><br>of Togetherness
+  </h1>
+
+  <p class="hero-subtitle">A love story that grew into a family legacy</p>
+
+  <div class="hero-date">
+    <div class="hero-date-line"></div>
+    <span class="hero-date-text">1975 — 2025</span>
+    <div class="hero-date-line"></div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</section>
+
+<!-- ── COUNTDOWN ── -->
+<div id="countdown">
+  <div class="countdown-label">Golden Jubilee Celebration Begins In</div>
+  <div class="countdown-grid">
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-days">00</span>
+      <span class="countdown-unit">Days</span>
+    </div>
+    <div class="countdown-sep">:</div>
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-hours">00</span>
+      <span class="countdown-unit">Hours</span>
+    </div>
+    <div class="countdown-sep">:</div>
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-mins">00</span>
+      <span class="countdown-unit">Minutes</span>
+    </div>
+    <div class="countdown-sep">:</div>
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-secs">00</span>
+      <span class="countdown-unit">Seconds</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── TIMELINE ── -->
+<section id="timeline">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">Their Golden Journey</h2>
+    <p class="section-subtitle">Fifty years of moments that built a beautiful life</p>
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <br><br>
+
+    <div class="timeline-track">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">1975 · The Beginning</div>
+          <div class="timeline-event">Sacred Wedding Vows</div>
+          <p class="timeline-desc">On a beautiful autumn day, two souls became one. The beginning of the most beautiful story ever written.</p>
+          <div class="timeline-photo">💍</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">1978 · New Life</div>
+          <div class="timeline-event">First Child Born</div>
+          <p class="timeline-desc">The family grew, and with it, a love that multiplied endlessly. Their hearts expanded to welcome a new life.</p>
+          <div class="timeline-photo">👶</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">1982 · Growing Family</div>
+          <div class="timeline-event">New Home, New Beginnings</div>
+          <p class="timeline-desc">They built not just a house, but a home filled with laughter, warmth, and countless beautiful memories.</p>
+          <div class="timeline-photo">🏡</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">1990 · Adventures</div>
+          <div class="timeline-event">First Family Voyage</div>
+          <p class="timeline-desc">Together they explored the world, creating adventures and memories that the children would carry forever.</p>
+          <div class="timeline-photo">✈️</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">1999 · Silver Lining</div>
+          <div class="timeline-event">25th Silver Anniversary</div>
+          <p class="timeline-desc">Quarter century of unbreakable love, celebrated with family and friends who witnessed this beautiful journey.</p>
+          <div class="timeline-photo">🥂</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2008 · Joy Multiplied</div>
+          <div class="timeline-event">First Grandchild Arrives</div>
+          <p class="timeline-desc">A new chapter began as they became grandparents, their love flowing now to a third generation.</p>
+          <div class="timeline-photo">🌟</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2025 · Golden</div>
+          <div class="timeline-event">Golden Jubilee — 50 Years!</div>
+          <p class="timeline-desc">Half a century of love. A legacy of joy. A family that is their greatest achievement. We celebrate you today.</p>
+          <div class="timeline-photo">👑</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">Memory Gallery</h2>
+    <p class="section-subtitle">Precious moments captured in time forever</p>
+    <div class="gold-divider" style="--gold-divider-line: rgba(201,168,76,0.4)">
+      <div class="gold-divider-line" style="background: rgba(201,168,76,0.4)"></div>
+      <div class="gold-divider-diamond"></div>
+      <div class="gold-divider-line" style="background: rgba(201,168,76,0.4)"></div>
+    </div>
+    <br><br>
+
+    <div class="gallery-tabs" id="galleryTabs">
+      <button class="gallery-tab active" onclick="filterGallery('all', this)">All</button>
+      <button class="gallery-tab" onclick="filterGallery('wedding', this)">Wedding</button>
+      <button class="gallery-tab" onclick="filterGallery('family', this)">Family</button>
+      <button class="gallery-tab" onclick="filterGallery('travel', this)">Travels</button>
+      <button class="gallery-tab" onclick="filterGallery('celebrations', this)">Celebrations</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- 12 gallery items -->
+    </div>
+
+    <div style="text-align:center; margin-top: 2rem;">
+      <button class="btn-gold" onclick="addMorePhotos()">+ Add Your Photos</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── VIDEOS ── -->
+<section id="videos">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">Video Memories</h2>
+    <p class="section-subtitle">Relive the moments that made us smile and cry with joy</p>
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <br><br>
+
+    <div class="video-grid">
+      <div class="video-card reveal">
+        <div class="video-thumb" onclick="alert('Video player: Replace with YouTube embed or video src')">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a0a08,#5a2d2d);opacity:0.8"></div>
+          <div style="font-size:4rem;position:absolute;opacity:0.2">🎬</div>
+          <div class="video-play-btn" style="position:relative;z-index:1">▶</div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Wedding Day · 1975</div>
+          <div class="video-title">The Ceremony</div>
+          <p class="video-desc">The day it all began — every vow, every tear of joy</p>
+        </div>
+      </div>
+      <div class="video-card reveal">
+        <div class="video-thumb" onclick="alert('Video player: Replace with YouTube embed or video src')">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0a1a1a,#1a3a3a);opacity:0.8"></div>
+          <div style="font-size:4rem;position:absolute;opacity:0.2">🎭</div>
+          <div class="video-play-btn" style="position:relative;z-index:1">▶</div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Family Moments</div>
+          <div class="video-title">Growing Up Together</div>
+          <p class="video-desc">Holidays, birthdays, and ordinary days turned extraordinary</p>
+        </div>
+      </div>
+      <div class="video-card reveal">
+        <div class="video-thumb" onclick="alert('Video player: Replace with YouTube embed or video src')">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a0a1a,#3a1a3a);opacity:0.8"></div>
+          <div style="font-size:4rem;position:absolute;opacity:0.2">🌍</div>
+          <div class="video-play-btn" style="position:relative;z-index:1">▶</div>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">Family Travels</div>
+          <div class="video-title">Adventures Around the World</div>
+          <p class="video-desc">Places we explored, cultures we embraced, memories we made</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-embed-input reveal" style="margin-top:3rem;">
+      <p>✦ ADD A VIDEO LINK ✦</p>
+      <input type="url" placeholder="Paste YouTube or Google Drive video link here…" id="videoLinkInput">
+      <br>
+      <button class="btn-gold" style="margin-top:1rem" onclick="addVideoLink()">Add Video</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── WISHES ── -->
+<section id="wishes">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">Wishes & Blessings</h2>
+    <p class="section-subtitle">Pour your love into words — let them feel every blessing</p>
+    <div class="gold-divider" style="margin-bottom:3rem">
+      <div class="gold-divider-line" style="background:rgba(201,168,76,0.4)"></div>
+      <div class="gold-divider-diamond"></div>
+      <div class="gold-divider-line" style="background:rgba(201,168,76,0.4)"></div>
+    </div>
+
+    <div class="wish-form">
+      <div class="wish-form-title">Leave Your Blessing</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" id="wishName">
+        </div>
+        <div class="form-group">
+          <label>Relation</label>
+          <select id="wishRelation">
+            <option>Son / Daughter</option>
+            <option>Son-in-law / Daughter-in-law</option>
+            <option>Grandchild</option>
+            <option>Sibling</option>
+            <option>Relative</option>
+            <option>Friend</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Your Heartfelt Message</label>
+        <textarea rows="4" placeholder="Write your love, memories, and blessings here…" id="wishText"></textarea>
+      </div>
+      <button class="btn-gold" onclick="submitWish()">Send Blessings ✦</button>
+    </div>
+
+    <div class="wishes-wall" id="wishesWall"></div>
+  </div>
+</section>
+
+<!-- ── FAMILY TREE ── -->
+<section id="family">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">Our Family Tree</h2>
+    <p class="section-subtitle">Roots that hold us, branches that reach toward tomorrow</p>
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <br><br>
+
+    <svg class="family-tree-svg" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+      <!-- Root couple -->
+      <rect x="325" y="20" width="250" height="70" rx="4" class="tree-central" stroke="#C9A84C" stroke-width="2"/>
+      <text x="450" y="50" class="tree-node-name" fill="#2C1810" font-family="'Cormorant Garamond',serif" font-size="16" text-anchor="middle">Father & Mother</text>
+      <text x="450" y="72" class="tree-node-role" fill="#C9A84C" font-family="'Cinzel',serif" font-size="9" letter-spacing="2" text-anchor="middle">THE GOLDEN COUPLE • 50 YEARS</text>
+      <!-- Heart between them -->
+      <text x="450" y="38" font-size="12" text-anchor="middle" fill="#7B2D3A">♥</text>
+
+      <!-- Trunk line down -->
+      <line x1="450" y1="90" x2="450" y2="160" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+      <!-- Branch line horizontal -->
+      <line x1="150" y1="160" x2="750" y2="160" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+      <!-- Child 1 -->
+      <line x1="150" y1="160" x2="150" y2="200" stroke="#C9A84C" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <rect x="60" y="200" width="180" height="60" rx="4" fill="white" stroke="#C9A84C" stroke-width="1.5"/>
+      <text x="150" y="228" font-family="'Cormorant Garamond',serif" font-size="14" text-anchor="middle" fill="#2C1810">Eldest Son</text>
+      <text x="150" y="248" font-family="'Cinzel',serif" font-size="8" letter-spacing="1.5" text-anchor="middle" fill="#C9A84C">SON • 1978</text>
+
+      <!-- Child 2 -->
+      <line x1="450" y1="160" x2="450" y2="200" stroke="#C9A84C" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <rect x="360" y="200" width="180" height="60" rx="4" fill="white" stroke="#C9A84C" stroke-width="1.5"/>
+      <text x="450" y="228" font-family="'Cormorant Garamond',serif" font-size="14" text-anchor="middle" fill="#2C1810">Daughter</text>
+      <text x="450" y="248" font-family="'Cinzel',serif" font-size="8" letter-spacing="1.5" text-anchor="middle" fill="#C9A84C">DAUGHTER • 1981</text>
+
+      <!-- Child 3 -->
+      <line x1="750" y1="160" x2="750" y2="200" stroke="#C9A84C" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <rect x="660" y="200" width="180" height="60" rx="4" fill="white" stroke="#C9A84C" stroke-width="1.5"/>
+      <text x="750" y="228" font-family="'Cormorant Garamond',serif" font-size="14" text-anchor="middle" fill="#2C1810">Youngest Son</text>
+      <text x="750" y="248" font-family="'Cinzel',serif" font-size="8" letter-spacing="1.5" text-anchor="middle" fill="#C9A84C">SON • 1985</text>
+
+      <!-- Spouse lines and grandchildren -->
+      <!-- Child 1 family -->
+      <line x1="150" y1="260" x2="150" y2="310" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="80" y1="310" x2="220" y2="310" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="80" y1="310" x2="80" y2="340" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="220" y1="310" x2="220" y2="340" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <rect x="30" y="340" width="100" height="50" rx="4" fill="#FFF9EC" stroke="#C9A84C" stroke-width="1" opacity="0.9"/>
+      <text x="80" y="363" font-family="'Cormorant Garamond',serif" font-size="12" text-anchor="middle" fill="#2C1810">Grandchild 1</text>
+      <text x="80" y="380" font-family="'Cinzel',serif" font-size="7" letter-spacing="1" text-anchor="middle" fill="#C9A84C">2005</text>
+      <rect x="170" y="340" width="100" height="50" rx="4" fill="#FFF9EC" stroke="#C9A84C" stroke-width="1" opacity="0.9"/>
+      <text x="220" y="363" font-family="'Cormorant Garamond',serif" font-size="12" text-anchor="middle" fill="#2C1810">Grandchild 2</text>
+      <text x="220" y="380" font-family="'Cinzel',serif" font-size="7" letter-spacing="1" text-anchor="middle" fill="#C9A84C">2008</text>
+
+      <!-- Child 2 family -->
+      <line x1="450" y1="260" x2="450" y2="340" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <rect x="395" y="340" width="110" height="50" rx="4" fill="#FFF9EC" stroke="#C9A84C" stroke-width="1" opacity="0.9"/>
+      <text x="450" y="363" font-family="'Cormorant Garamond',serif" font-size="12" text-anchor="middle" fill="#2C1810">Grandchild 3</text>
+      <text x="450" y="380" font-family="'Cinzel',serif" font-size="7" letter-spacing="1" text-anchor="middle" fill="#C9A84C">2010</text>
+
+      <!-- Child 3 family -->
+      <line x1="750" y1="260" x2="750" y2="310" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="690" y1="310" x2="810" y2="310" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="690" y1="310" x2="690" y2="340" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="810" y1="310" x2="810" y2="340" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+      <rect x="640" y="340" width="100" height="50" rx="4" fill="#FFF9EC" stroke="#C9A84C" stroke-width="1" opacity="0.9"/>
+      <text x="690" y="363" font-family="'Cormorant Garamond',serif" font-size="12" text-anchor="middle" fill="#2C1810">Grandchild 4</text>
+      <text x="690" y="380" font-family="'Cinzel',serif" font-size="7" letter-spacing="1" text-anchor="middle" fill="#C9A84C">2015</text>
+      <rect x="760" y="340" width="100" height="50" rx="4" fill="#FFF9EC" stroke="#C9A84C" stroke-width="1" opacity="0.9"/>
+      <text x="810" y="363" font-family="'Cormorant Garamond',serif" font-size="12" text-anchor="middle" fill="#2C1810">Grandchild 5</text>
+      <text x="810" y="380" font-family="'Cinzel',serif" font-size="7" letter-spacing="1" text-anchor="middle" fill="#C9A84C">2018</text>
+
+      <!-- Decorative elements -->
+      <text x="450" y="480" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" text-anchor="middle" fill="#C9A84C" opacity="0.6">
+        "A family is a gift that lasts forever"
+      </text>
+      <line x1="200" y1="475" x2="350" y2="475" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+      <line x1="550" y1="475" x2="700" y2="475" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+    </svg>
+
+    <p style="text-align:center;font-style:italic;color:var(--text-light);font-family:'EB Garamond',serif;margin-top:1rem;">
+      Customize names and dates in the admin panel
+    </p>
+  </div>
+</section>
+
+<!-- ── EVENT ── -->
+<section id="event">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">The Celebration</h2>
+    <p class="section-subtitle">Join us for an evening of love, memories, and golden moments</p>
+    <div class="gold-divider" style="margin-bottom:3rem">
+      <div class="gold-divider-line" style="background:rgba(201,168,76,0.3)"></div>
+      <div class="gold-divider-diamond"></div>
+      <div class="gold-divider-line" style="background:rgba(201,168,76,0.3)"></div>
+    </div>
+
+    <div class="event-grid">
+      <div class="event-detail-card reveal">
+        <div class="event-item">
+          <div class="event-icon">📅</div>
+          <div>
+            <div class="event-item-label">Date</div>
+            <div class="event-item-value">Saturday, 15th November 2025</div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-icon">🕕</div>
+          <div>
+            <div class="event-item-label">Time</div>
+            <div class="event-item-value">6:00 PM — 11:00 PM<br><span style="font-size:0.9rem;opacity:0.7">Dinner starts at 7:30 PM</span></div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-icon">📍</div>
+          <div>
+            <div class="event-item-label">Venue</div>
+            <div class="event-item-value">The Grand Ballroom<br>Royal Heritage Palace<br>New Delhi, India 110001</div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-icon">👗</div>
+          <div>
+            <div class="event-item-label">Dress Code</div>
+            <div class="event-item-value">Elegant — Gold & Cream preferred</div>
+          </div>
+        </div>
+        <a href="#" class="rsvp-btn" onclick="handleRSVP(event)">RSVP Now — Reserve Your Seat</a>
+      </div>
+
+      <div class="reveal">
+        <div class="map-placeholder">
+          <span>🗺️</span>
+          <p>VENUE LOCATION MAP</p>
+          <a href="https://maps.google.com" target="_blank" class="map-link">Open in Google Maps ↗</a>
+        </div>
+        <p style="color:rgba(250,246,238,0.4);font-size:0.8rem;font-style:italic;margin-top:0.75rem;font-family:'EB Garamond',serif">
+          ✦ Valet parking available · Accessible venue · Indoor climate controlled
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MEMORY BOOK ── -->
+<section id="memorybook">
+  <div class="container">
+    <div class="section-ornament">✦</div>
+    <h2 class="section-title">The Memory Book</h2>
+    <p class="section-subtitle">A digital scrapbook of a life beautifully lived together</p>
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <br><br>
+
+    <div class="book-container">
+      <div class="book" id="memBook">
+        <div class="book-left" id="bookLeft">
+          <div class="book-sticker" style="top:1rem;right:1rem">📌</div>
+          <div class="book-quote" id="bookQuote">"Two souls, one heart — fifty years of love's most beautiful art."</div>
+          <div class="book-image-box" id="bookImage">📷</div>
+          <div class="book-quote-attr" id="bookAttr">— On their wedding day, 1975</div>
+          <div class="book-page-num" id="bookPageL">Page 1</div>
+        </div>
+        <div class="book-right" id="bookRight">
+          <div class="book-sticker" style="bottom:3rem;right:1rem">🌸</div>
+          <p id="bookText" style="font-family:'EB Garamond',serif;font-size:1.05rem;line-height:1.8;color:var(--text-mid);font-style:italic">
+            They began with nothing but love, and built everything that matters. Every morning they chose each other, and every evening they were grateful for that choice. Fifty years is not just a number — it is a thousand mornings of coffee shared, ten thousand nights of prayers offered together, and a lifetime of hands held through every storm and every sunshine.
+          </p>
+          <div class="book-page-num" id="bookPageR">Page 2</div>
+        </div>
+      </div>
+      <div class="book-nav">
+        <button class="book-nav-btn" onclick="prevPage()">← Previous</button>
+        <span id="bookPageIndicator" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.1em;color:var(--gold);padding:0 1rem;line-height:2.5">1 / 4</span>
+        <button class="book-nav-btn" onclick="nextPage()">Next →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SHARE ── -->
+<div class="share-section">
+  <div class="share-label">✦ Share This Celebration ✦</div>
+  <div class="share-btns">
+    <button class="share-btn" onclick="shareLink('whatsapp')">WhatsApp</button>
+    <button class="share-btn" onclick="shareLink('copy')">Copy Link</button>
+    <button class="share-btn" onclick="window.print()">Print / Save PDF</button>
+    <button class="share-btn" onclick="shareLink('download')">Download Memories</button>
+  </div>
+</div>
+
+<!-- ── ADMIN ── -->
+<section id="admin">
+  <div class="container">
+    <div class="section-ornament" style="color:var(--maroon)">✦</div>
+    <h2 class="section-title" style="color:var(--text-dark)">Family Admin Panel</h2>
+    <p class="section-subtitle">Manage and upload memories — family use only</p>
+    <div class="gold-divider"><div class="gold-divider-line"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line"></div></div>
+    <br><br>
+
+    <div class="admin-login" id="adminLogin">
+      <div class="admin-logo">✦ Family Access ✦</div>
+      <div class="admin-subtitle-text">Enter the family password to manage memories</div>
+      <div class="admin-form">
+        <div>
+          <label>Family Password</label>
+          <input type="password" placeholder="Enter password…" id="adminPass">
+        </div>
+        <button class="btn-gold" onclick="adminLogin()" style="margin-top:0.5rem">Enter Family Space</button>
+        <p style="font-size:0.8rem;color:var(--text-light);text-align:center;font-style:italic;margin-top:0.5rem">Default: family2025</p>
+      </div>
+    </div>
+
+    <div class="admin-panel" id="adminPanel">
+      <div style="background:var(--white);border:1px solid var(--gold-pale);padding:2rem;margin-bottom:2rem;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--text-dark);margin-bottom:0.5rem">Welcome, Family! 🌟</h3>
+        <p style="color:var(--text-light);font-style:italic">Use this panel to upload photos, videos, and manage all content.</p>
+      </div>
+      <div class="admin-upload-grid">
+        <div class="upload-zone" onclick="triggerUpload('photos')">
+          <div class="upload-icon">📸</div>
+          <div class="upload-title">Upload Photos</div>
+          <p class="upload-desc">JPG, PNG, WEBP<br>Max 10MB per file</p>
+          <input type="file" accept="image/*" multiple style="display:none" id="photoUpload" onchange="handlePhotoUpload(this)">
+        </div>
+        <div class="upload-zone" onclick="triggerUpload('videos')">
+          <div class="upload-icon">🎬</div>
+          <div class="upload-title">Upload Videos</div>
+          <p class="upload-desc">MP4, MOV, AVI<br>Or paste YouTube link above</p>
+          <input type="file" accept="video/*" style="display:none" id="videoUpload">
+        </div>
+        <div class="upload-zone" onclick="editWishes()">
+          <div class="upload-icon">✍️</div>
+          <div class="upload-title">Manage Wishes</div>
+          <p class="upload-desc">Approve, edit or remove blessings from the wall</p>
+        </div>
+        <div class="upload-zone" onclick="editTimeline()">
+          <div class="upload-icon">📅</div>
+          <div class="upload-title">Edit Timeline</div>
+          <p class="upload-desc">Add or update milestone events in the journey</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <button class="btn-gold" onclick="adminLogout()">Logout</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-ornament">✦</div>
+  <div class="footer-title">50 Years of Togetherness</div>
+  <p class="footer-subtitle">A celebration of love that has no end</p>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#timeline">Journey</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#wishes">Wishes</a>
+    <a href="#family">Family</a>
+    <a href="#event">Celebration</a>
+    <a href="#memorybook">Memory Book</a>
+  </div>
+  <p class="footer-copy">
+    Made with <span class="footer-hearts">♥</span> by the family · Golden Jubilee 2025 · All memories are priceless
+  </p>
+</footer>
+
+<script>
+// ── PARTICLES ──
+function createHeroParticles() {
+  const container = document.getElementById('heroParticles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.width = p.style.height = (Math.random() * 4 + 2) + 'px';
+    p.style.animationDuration = (Math.random() * 8 + 6) + 's';
+    p.style.animationDelay = (Math.random() * 8) + 's';
+    p.style.opacity = Math.random() * 0.8;
+    container.appendChild(p);
+  }
+}
+
+function createSparkles() {
+  const field = document.getElementById('sparkleField');
+  for (let i = 0; i < 20; i++) {
+    const s = document.createElement('div');
+    s.className = 'sparkle';
+    s.style.left = Math.random() * 100 + '%';
+    s.style.top = Math.random() * 100 + '%';
+    s.style.animationDuration = (Math.random() * 4 + 3) + 's';
+    s.style.animationDelay = (Math.random() * 5) + 's';
+    field.appendChild(s);
+  }
+}
+
+// ── MUSIC ──
+let musicPlaying = false;
+function toggleMusic() {
+  musicPlaying = !musicPlaying;
+  const btn = document.getElementById('musicBtn');
+  const player = document.getElementById('musicPlayer');
+  const status = document.getElementById('musicStatus');
+  if (musicPlaying) {
+    btn.textContent = '♪ Playing';
+    player.classList.remove('music-paused');
+    player.classList.add('music-playing');
+    status.textContent = '♪ Soft melody';
+  } else {
+    btn.textContent = '♪ Music';
+    player.classList.add('music-paused');
+    player.classList.remove('music-playing');
+    status.textContent = '♪ Paused';
+  }
+}
+
+// ── COUNTDOWN ──
+function startCountdown() {
+  const targetDate = new Date('2025-11-15T18:00:00');
+  function update() {
+    const now = new Date();
+    const diff = targetDate - now;
+    if (diff <= 0) {
+      document.getElementById('cd-days').textContent = '00';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent = '00';
+      document.getElementById('cd-secs').textContent = '00';
+      return;
+    }
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    const secs = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  update();
+  setInterval(update, 1000);
+}
+
+// ── GALLERY ──
+const galleryItems = [
+  { cat: 'wedding', icon: '💍', label: 'The Wedding Ceremony', year: '1975' },
+  { cat: 'wedding', icon: '👰', label: 'The Bride & Groom', year: '1975' },
+  { cat: 'family', icon: '👨‍👩‍👧‍👦', label: 'First Family Portrait', year: '1982' },
+  { cat: 'family', icon: '🎂', label: 'Birthday Celebrations', year: '1988' },
+  { cat: 'travel', icon: '✈️', label: 'Family Holiday', year: '1995' },
+  { cat: 'travel', icon: '🏖️', label: 'Beach Vacation', year: '2002' },
+  { cat: 'celebrations', icon: '🥂', label: 'Silver Anniversary', year: '2000' },
+  { cat: 'celebrations', icon: '🎉', label: 'Family Reunion', year: '2010' },
+  { cat: 'family', icon: '👶', label: 'Grandchildren Arrive', year: '2008' },
+  { cat: 'wedding', icon: '💒', label: 'Vow Renewal Ceremony', year: '2000' },
+  { cat: 'travel', icon: '🗺️', label: 'World Adventures', year: '2015' },
+  { cat: 'celebrations', icon: '🌟', label: 'Golden Jubilee Prep', year: '2025' },
+];
+
+function buildGallery(filter) {
+  const grid = document.getElementById('galleryGrid');
+  grid.innerHTML = '';
+  galleryItems.filter(i => filter === 'all' || i.cat === filter).forEach((item, idx) => {
+    const el = document.createElement('div');
+    el.className = 'gallery-item';
+    el.innerHTML = `
+      <div class="gallery-placeholder">
+        <div class="gallery-placeholder-icon">${item.icon}</div>
+        <div class="gallery-placeholder-text">${item.label} · ${item.year}</div>
+      </div>
+      <div class="gallery-overlay">
+        <div class="gallery-expand" onclick="openLightbox('${item.icon}','${item.label} — ${item.year}')">🔍</div>
+      </div>`;
+    grid.appendChild(el);
+  });
+}
+
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  buildGallery(cat);
+}
+
+function openLightbox(icon, caption) {
+  document.getElementById('lightbox').classList.add('open');
+  document.getElementById('lightboxImg').innerHTML = `<div style="font-size:6rem;padding:3rem">${icon}</div>`;
+  document.getElementById('lightboxCaption').textContent = caption;
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+function addMorePhotos() {
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = 'image/*'; input.multiple = true;
+  input.onchange = function() {
+    const files = Array.from(this.files);
+    files.forEach(file => {
+      const reader = new FileReader();
+      reader.onload = e => {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        item.innerHTML = `<img src="${e.target.result}" style="width:100%;height:100%;object-fit:cover">
+          <div class="gallery-overlay"><div class="gallery-expand" onclick="openLightbox('📸','${file.name}')">🔍</div></div>`;
+        document.getElementById('galleryGrid').appendChild(item);
+      };
+      reader.readAsDataURL(file);
+    });
+  };
+  input.click();
+}
+
+// ── WISHES ──
+const defaultWishes = [
+  { name: 'Ravi & Priya', relation: 'Son & Daughter-in-law', text: 'You are our guiding stars. Fifty years of love that never dimmed — we aspire every day to be even half the couple you are. Happy Golden Jubilee, Maa and Papa.', hearts: '♥♥♥' },
+  { name: 'Ananya', relation: 'Granddaughter', text: 'Nana and Nani, your love story is my favorite fairy tale. Thank you for teaching us what forever looks like. I love you to the moon and back.', hearts: '♥♥♥♥♥' },
+  { name: 'The Sharma Family', relation: 'Relatives', text: 'Fifty years of unwavering love and beautiful family values. You are an inspiration to everyone who has had the privilege of knowing you both.', hearts: '♥♥' },
+  { name: 'Deepak & Sunita', relation: 'Friends', text: 'From our first day as neighbors, we watched a love story unfold that is nothing short of divine. God bless you with fifty more years of togetherness.', hearts: '♥♥♥' },
+];
+
+function renderWishes(wishes) {
+  const wall = document.getElementById('wishesWall');
+  wall.innerHTML = '';
+  wishes.forEach((w, i) => {
+    const card = document.createElement('div');
+    card.className = 'wish-card';
+    card.style.animationDelay = (i * 0.1) + 's';
+    card.innerHTML = `
+      <div class="wish-relation">${w.relation}</div>
+      <div class="wish-text">"${w.text}"</div>
+      <div class="wish-author">— ${w.name}</div>
+      <div class="wish-hearts">${w.hearts}</div>`;
+    wall.appendChild(card);
+  });
+}
+
+function submitWish() {
+  const name = document.getElementById('wishName').value.trim();
+  const relation = document.getElementById('wishRelation').value;
+  const text = document.getElementById('wishText').value.trim();
+  if (!name || !text) { alert('Please enter your name and message ♥'); return; }
+  defaultWishes.unshift({ name, relation, text, hearts: '♥♥♥' });
+  renderWishes(defaultWishes);
+  document.getElementById('wishName').value = '';
+  document.getElementById('wishText').value = '';
+  // Scroll to wall
+  document.getElementById('wishesWall').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ── MEMORY BOOK ──
+const bookPages = [
+  {
+    quote: '"Two souls, one heart — fifty years of love\'s most beautiful art."',
+    image: '💑', attr: '— On their wedding day, 1975',
+    text: 'They began with nothing but love, and built everything that matters. Every morning they chose each other, and every evening they were grateful for that choice. Fifty years is not just a number — it is a thousand mornings of coffee shared, a thousand nights of prayers offered together, and a lifetime of hands held through every storm and sunshine.'
+  },
+  {
+    quote: '"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."',
+    image: '🏡', attr: '— Their favorite saying',
+    text: 'They built a home that was not just walls and rooms, but a sanctuary of warmth. Every corner held a memory — the kitchen where stories were told, the garden where evenings were spent in silence that needed no words, the dining table where family gathered and laughter never stopped.'
+  },
+  {
+    quote: '"Growing old together is the greatest adventure we never knew we signed up for."',
+    image: '👨‍👩‍👧‍👦', attr: '— Celebrating their children\'s milestones',
+    text: 'Their greatest joy was watching their children grow into beautiful human beings. Every school concert, every graduation, every wedding — they stood together, hand in hand, their hearts so full they could barely contain the love. The family they raised is their greatest masterpiece.'
+  },
+  {
+    quote: '"The best love is the kind that awakens the soul and makes us reach for more, that plants a fire in our hearts and brings peace to our minds."',
+    image: '✨', attr: '— As they enter their golden chapter',
+    text: 'Fifty years. Eighteen thousand and two hundred fifty days. Four hundred and thirty-eight thousand hours. And still, when he looks at her, he smiles. And when she holds his hand, she is home. That is not a marriage. That is a miracle. Happy Golden Jubilee — may you shine forever.'
+  }
+];
+let currentPage = 0;
+
+function renderBook() {
+  const page = bookPages[currentPage];
+  document.getElementById('bookQuote').textContent = page.quote;
+  document.getElementById('bookImage').innerHTML = `<span style="font-size:4rem">${page.image}</span>`;
+  document.getElementById('bookAttr').textContent = page.attr;
+  document.getElementById('bookText').textContent = page.text;
+  document.getElementById('bookPageL').textContent = `Page ${currentPage * 2 + 1}`;
+  document.getElementById('bookPageR').textContent = `Page ${currentPage * 2 + 2}`;
+  document.getElementById('bookPageIndicator').textContent = `${currentPage + 1} / ${bookPages.length}`;
+}
+
+function nextPage() {
+  if (currentPage < bookPages.length - 1) {
+    currentPage++;
+    renderBook();
+  }
+}
+function prevPage() {
+  if (currentPage > 0) {
+    currentPage--;
+    renderBook();
+  }
+}
+
+// ── ADMIN ──
+function adminLogin() {
+  const pass = document.getElementById('adminPass').value;
+  if (pass === 'family2025') {
+    document.getElementById('adminLogin').style.display = 'none';
+    document.getElementById('adminPanel').classList.add('active');
+  } else {
+    alert('Incorrect password. Please try again.');
+  }
+}
+function adminLogout() {
+  document.getElementById('adminLogin').style.display = 'block';
+  document.getElementById('adminPanel').classList.remove('active');
+  document.getElementById('adminPass').value = '';
+}
+function triggerUpload(type) {
+  document.getElementById(type === 'photos' ? 'photoUpload' : 'videoUpload').click();
+}
+function handlePhotoUpload(input) {
+  const files = Array.from(input.files);
+  alert(`${files.length} photo(s) selected. In production, these would upload to your server or Firebase Storage.`);
+}
+function editWishes() {
+  alert('In production: Open a modal to approve/delete wishes from the wall.');
+}
+function editTimeline() {
+  alert('In production: Open a form to add or edit timeline milestone events.');
+}
+
+// ── VIDEO ──
+function addVideoLink() {
+  const link = document.getElementById('videoLinkInput').value.trim();
+  if (!link) return;
+  let embedUrl = '';
+  if (link.includes('youtube.com') || link.includes('youtu.be')) {
+    const id = link.split('v=')[1]?.split('&')[0] || link.split('/').pop();
+    embedUrl = `https://www.youtube.com/embed/${id}`;
+  } else {
+    embedUrl = link;
+  }
+  const container = document.querySelector('.video-grid');
+  const card = document.createElement('div');
+  card.className = 'video-card reveal visible';
+  card.innerHTML = `
+    <iframe src="${embedUrl}" width="100%" style="aspect-ratio:16/9;border:none;display:block"></iframe>
+    <div class="video-info">
+      <div class="video-tag">Family Video</div>
+      <div class="video-title">Shared Memory</div>
+      <p class="video-desc">Added by family</p>
+    </div>`;
+  container.appendChild(card);
+  document.getElementById('videoLinkInput').value = '';
+}
+
+// ── RSVP ──
+function handleRSVP(e) {
+  e.preventDefault();
+  const name = prompt('Your full name:');
+  if (!name) return;
+  const count = prompt('Number of guests attending (including yourself):');
+  alert(`✦ Thank you, ${name}! Your RSVP for ${count} guest(s) has been noted. We look forward to celebrating with you! ✦`);
+}
+
+// ── SHARE ──
+function shareLink(type) {
+  const url = window.location.href;
+  if (type === 'whatsapp') {
+    window.open(`https://wa.me/?text=Join%20us%20for%20a%20Golden%20Jubilee%20Celebration!%20${encodeURIComponent(url)}`);
+  } else if (type === 'copy') {
+    navigator.clipboard.writeText(url).then(() => alert('Link copied to clipboard! Share with family ♥'));
+  } else if (type === 'download') {
+    alert('In production: This would generate a PDF/ZIP of all memories for download.');
+  }
+}
+
+// ── SCROLL REVEAL ──
+function initScrollReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded', () => {
+  createHeroParticles();
+  createSparkles();
+  startCountdown();
+  buildGallery('all');
+  renderWishes(defaultWishes);
+  renderBook();
+  initScrollReveal();
+
+  // Keyboard close lightbox
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+  document.getElementById('lightbox').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeLightbox();
+  });
+});
+</script>
+</body>
+</html>
